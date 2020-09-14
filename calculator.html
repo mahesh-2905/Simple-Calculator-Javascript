@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header text-center">
+                <h1>Bored off.. Try Something New</h1>
+                <h4>(Simple Calcutaions)</h4>
+            </div>
+            <div class="display">
+                <div id="output">
+                   
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="row">
+                    <div class="col-md-6  col-sm-6">
+                        <div  id="operands_section">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="1" onclick="operands(1)">1</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="2" onclick="operands(2)">2</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="3" onclick="operands(3)">3</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="4" onclick="operands(4)">4</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="5" onclick="operands(5)">5</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="6" onclick="operands(6)">6</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="7" onclick="operands(7)">7</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="8" onclick="operands(8)">8</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 text-center">
+                                    <button class="btn operands btn-primary" value="9" onclick="operands(9)">9</button>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-md-offset-4 text-center">
+                                    <button class="btn operands btn-primary"  onclick="operands(0)">0</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  col-sm-6">
+                        <div id="operators_section">
+                             <div class="row">
+                                 <div class="col-md-6 col-sm-6 text-center">
+                                     <button class="btn operator btn-warning" onclick="operators('+')" value="+">+</button>
+                                 </div>
+                                 <div class="col-md-6 col-sm-6 text-center">
+                                    <button class="btn operator btn-warning" onclick="operators('-')" value="-">-</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 text-center">
+                                    <button class="btn operator btn-warning" onclick="operators('*')" value="*">*</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 text-center">
+                                    <button class="btn operator btn-warning" onclick="operators('/')" value="/">/</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 text-center">
+                                    <button class="btn btn-warning" onclick="action()">=</button>
+                                </div>
+                                <div class="col-md-6 col-sm-6 text-center">
+                                    <button class="btn btn-warning" onclick="clearall()">Clear</button>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
